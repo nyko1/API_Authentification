@@ -5,7 +5,7 @@ const router = express.Router();
 const indexController = require('../controllers/indexController');
 
 
-router.get('/index',auth, indexController.index);
+router.post('/index',auth, indexController.index);
 
 
 module.exports = router;
